@@ -7,10 +7,5 @@ jobs:
     runs-on: ubuntu-latest # The operating system environement that the job runs on. In this case, runs on the latest version of ubuntu
 
     steps:
-    - name: Checkout Repository
-      uses: actions/checkout@v2
-
-    - name: Print Docker Username
-      run: echo ${ secrets.DOCKER_USERNAME }
-      env:
-        DOCKER_USERNAME: ${ secrets.DOCKER_USERNAME }
+      - name: Say Hello # The name of the step, it is just for reability
+        run: echo 'Hello, world!'
