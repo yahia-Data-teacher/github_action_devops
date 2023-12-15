@@ -7,5 +7,10 @@ jobs:
     runs-on: ubuntu-latest # The operating system environement that the job runs on. In this case, runs on the latest version of ubuntu
 
     steps:
-      - name: Say Hello # The name of the step, it is just for reability
-        run: echo "${{ docker.DOCKER_USERNAME }}" #'Hello, world!'
+      # - name: Say Hello # The name of the step, it is just for reability
+      #   run: echo "${{ secrets.DOCKER_USERNAME }}" #'Hello, world!'
+      - name: Print DOCKER_USERNAME
+        run: |
+          echo $DOCKER_USERNAME
+        env:
+          DOCKER_USERNAME: ${{ secrets.DOCKER_USERNAME }}
