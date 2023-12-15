@@ -8,4 +8,4 @@ jobs:
 
     steps:
       - name: Say Hello # The name of the step, it is just for reability
-        run: echo $ {{secrets.DOCKER_USERNAME}} #'Hello, world!'
+        run: echo ${{secrets.DOCKER_USERNAME}} #'Hello, world!'
