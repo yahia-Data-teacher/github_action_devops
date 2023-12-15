@@ -8,4 +8,4 @@ jobs:
 
     steps:
       - name: Say Hello # The name of the step, it is just for reability
-        run: echo ${{matrix.platform}} #'Hello, world!'
+        run: echo ${{ matrix.platform }} #'Hello, world!'
