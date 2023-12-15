@@ -11,6 +11,6 @@ jobs:
       uses: actions/checkout@v2
 
     - name: Print Docker Username
-      run: ${{ secrets.DOCKER_USERNAME }}
+      run: echo ${ secrets.DOCKER_USERNAME }
       env:
         DOCKER_USERNAME: ${{ secrets.DOCKER_USERNAME }}
