@@ -13,4 +13,4 @@ jobs:
     - name: Print Docker Username
       run: echo ${ secrets.DOCKER_USERNAME }
       env:
-        DOCKER_USERNAME: ${{ secrets.DOCKER_USERNAME }}
+        DOCKER_USERNAME: ${ secrets.DOCKER_USERNAME }
